@@ -1,0 +1,99 @@
+/* 전체 스타일 설정 */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Nanum Gothic', sans-serif;
+    background: none; /* 기존 배경을 제거 */
+}
+
+
+
+/* 상단 네비게이션 바 */
+.navbar-container {
+    background-color: rgba(224, 224, 224, 0.8);
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+/* 드롭다운 메뉴 */
+.navbar-container .dropdown-menu {
+    width: 200px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* 드롭다운 항목 스타일 */
+.dropdown-item {
+    cursor: pointer;
+    font-size: 14px;
+    padding: 10px;
+}
+
+/* 하위 메뉴 숨김 */
+.submenu {
+    display: none;
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+
+/* 하위 메뉴 표시 */
+.submenu.show {
+    display: block;
+}
+
+/* 사용자 정보 */
+.user-info {
+    font-size: 12px;
+    color: #555;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.user-info img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+/* 로고 중앙 배치 */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* 화면 전체 높이 사용 */
+    text-align: center;
+}
+
+.logo-container img {
+    max-width: 400px;
+    height: auto;
+    display: block;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .dropdown-menu {
+        width: 100%;
+    }
+
+    .logo-container img {
+        max-width: 300px;
+    }
+}
+
+

@@ -1,0 +1,6 @@
+aaa','가가가','2024-03-01');insert into (id,name, birth) valus('
+bbb','나나나','2024-03-03');insert into (id,name, birth) valus('
+ccc','다다다','2024-03-04');insert into (id,name, birth) valus('
+');insert into (id,name, birth) valus('
+insert into (id,name, birth) valus('
+insert into (id,name, birth) valus('insert into (id,name, birth) valus('

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지 태그 예제</title>
+</head>
+<body>
+
+    <h1>이미지 태그 사용 예제</h1>
+
+    <!-- 기본 이미지 삽입   source : src  destination : dst
+            original : org image : img 
+    -->
+    <h2>1. 기본 이미지 삽입</h2>
+    <img src="html.webp" alt="HTML 이미지">
+    <img src="html.webp" alt="HTML 이미지" width="300">
+
+    <!-- 너비와 높이를 지정한 이미지 -->
+    <h2>2. 너비와 높이를 지정한 이미지</h2>
+    <img src="html.webp" alt="HTML 이미지" width="200" height="200">
+    <img src="html.webp" alt="HTML 이미지" width="50%">
+
+    <!-- 이미지에 링크를 추가한 예제 -->
+    <h2>3. 이미지에 링크를 추가</h2>
+    <a href="https://plus.cnu.ac.kr">
+        <img src="html.webp" alt="충남대학교 홈페이지로 이동" width="300">
+    </a>
+
+    <!-- 대체 텍스트만 표시되는 예제 (이미지 파일이 없을 때) -->
+    <h2>4. 이미지 파일이 없을 때 대체 텍스트 표시</h2>
+    <img src="nonexistent.webp" alt="이미지를 찾을 수 없습니다" width="300">
+
+    <!-- 이미지에 설명을 추가한 예제 (캡션) -->
+    <h2>5. 이미지에 설명(캡션) 추가</h2>
+    <figure>
+        <img src="html.webp" alt="HTML 이미지" width="300">
+        <figcaption>HTML 학습용 웹 이미지</figcaption>
+    </figure>
+
+    <!-- 배경 이미지로 설정한 예제 -->
+    <h2>6. 배경 이미지로 설정한 예제</h2>
+    <div style="width: 300px; height: 200px; background-image: url('html.webp'); background-size: cover;">
+        이곳은 배경 이미지가 적용된 박스입니다.
+    </div>
+
+</body>
+</html>

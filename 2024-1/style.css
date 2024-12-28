@@ -1,0 +1,50 @@
+
+a:link { text-decoration:none; color:#333333;}
+a:hover { text-decoration:none; color:#0000FF;}
+a:visited { text-decoration:none; color:#333333;}
+
+#collapsibleNavbar a:hover{ text-decoration:underline; 
+    color:#FFFFFF; 
+    font-weight:bold; 
+}
+#collapsibleNavbar a:link{ text-decoration:underline; 
+    color:#FFFFFF; 
+    font-weight:bold; 
+}
+#collapsibleNavbar a:visited{ text-decoration:underline; 
+    color:#FFFFFF; 
+    font-weight:bold; 
+}
+.dropdown-menu a:link { 
+    text-decoration:underline;
+    color:#333333;
+}
+.dropdown-menu a:hover, .dropdown-menu a:visited {
+    text-decoration:underline;
+    color:#333333;
+}
+
+.ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    max-width:0;
+}
+
+.row {
+    line-height:180%;
+    min-width:100%;
+    min-height:30px;
+    height:auto;
+    padding-top: 5px;
+    border:0px solid  #FFFFFF;
+}
+
+.colLine {
+    line-height:180%;
+    min-height:30px;
+    padding-top: 5px;
+    border-bottom:1px dotted  #333333;
+    padding-top:4px; 
+    padding-bottom:4px;
+}

@@ -1,0 +1,158 @@
+/* 기본 스타일 */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+/* 콘텐츠를 중앙에 배치하고, 아래에서 고정된 푸터 설정 */
+.content {
+  flex: 1;
+}
+
+/* 중앙 영역의 크기를 조정하여 60% 비율로 배치 */
+.center-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh; /* 상단 40%, 하단 60% 비율 */
+  text-align: center;
+}
+
+/* 푸터 고정 설정 */
+.footer {
+  background-color: #a80808;
+  color: white;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* 컬럼 라인 스타일 */
+.colLine {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+/* 로그인 버튼과 챗봇 버튼을 오른쪽 상단에 고정 */
+.d-flex {
+  display: flex;
+  justify-content: flex-end; /* 오른쪽 정렬 */
+  gap: 10px; /* 버튼 사이에 여백 추가 */
+}
+
+.ms-auto {
+  margin-left: auto; /* 오른쪽 끝으로 밀어 배치 */
+}
+
+/* 버튼의 기본 배치 설정 */
+.btn-outline-primary {
+  position: relative;
+  top: 20px;
+}
+
+/* 검색창의 크기를 절반으로 줄임 */
+.search-form input {
+  width: 50%; /* 검색창의 너비를 50%로 설정 */
+}
+
+/* 드롭다운 메뉴 스타일 */
+.dropdown-menu {
+  width: 200px;
+  padding: 10px;
+}
+
+/* 드롭다운 항목 스타일 */
+.dropdown-item {
+  cursor: pointer;
+  font-size: 14px;
+  padding: 10px 10px;
+}
+
+/* 하위 메뉴 기본적으로 숨김 */
+.submenu {
+  display: none;
+  padding-left: 15px;
+  padding-bottom: 10px;
+}
+
+/* 하위 메뉴가 보이게 하는 클래스 */
+.submenu.show {
+  display: block;
+}
+
+/* 내정보 스타일 */
+.user-info {
+  font-size: 12px;
+  color: #555;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.user-info img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+/* 닫기 버튼 스타일 */
+.close-btn {
+  display: block;
+  margin-top: 10px;
+  background: none;
+  border: none;
+  color: #555;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* 인기게시글과 사자성어 창 스타일 */
+.row {
+  margin-top: 20px;
+}
+
+.border {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+/* 사자성어 폰트 크기 */
+.fs-1 {
+  font-size: 2rem;
+}
+
+/* + 버튼의 마진 설정 */
+.btn-outline-primary {
+  margin-top: 10px;
+  font-size: 1rem;
+  padding: 0.25rem 0.5rem;
+}
+
+/* 타이틀과 + 버튼을 나란히 배치 */
+.d-flex.justify-content-between {
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* + 버튼을 작게 조정 (작은 버튼) */
+.btn-sm {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
